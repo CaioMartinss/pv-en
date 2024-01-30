@@ -1,0 +1,19 @@
+{
+  "name": "pv-en",
+  "version": "1.0.0",
+  "description": "project based on phrasal verb",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
+  }
+}
