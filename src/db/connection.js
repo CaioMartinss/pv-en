@@ -6,5 +6,5 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGOD
     .then(() => console.log('MongoDB Conectado'))
     .catch(err => {
         console.error('Erro de Conexão com o MongoDB:', err);
-        process.exit(1); // Encerra o processo em caso de erro de conexão
+        process.exit(1);
     });
