@@ -9,7 +9,6 @@ import routerUpdate from './src/routes/update.js';
 const app = express();
 app.use(express.json());
 
-
 app.use("/", routerInsert);
 app.use("/", routerDelete);
 app.use("/", routerUpdate);
