@@ -35,6 +35,34 @@
   background-color: #0056b3;
 }
 
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #4CAF50;
+  /* Cor de fundo verde */
+  color: white;
+  /* Cor do texto branco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+  /* Cor de fundo verde mais escura ao passar o mouse */
+}
+
+
+
+
+
 /* Estilos para os cards */
 /* Estilos para os cards */
 .card-container {

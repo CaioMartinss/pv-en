@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         exampleParagraph.textContent = `Example: ${phrasalVerb.example}`;
         card.appendChild(exampleParagraph);
 
+        const typePhrasalVerb = document.createElement('p');
+        typePhrasalVerb.textContent = `Type: ${phrasalVerb.type}`;
+        card.appendChild(typePhrasalVerb);
+
+
         return card;
     };
 
