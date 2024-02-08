@@ -7,8 +7,8 @@ import routerDelete from './src/routes/delete.js';
 import routerList from './src/routes/list/list.js';
 import routerUpdate from './src/routes/update.js';
 
-import routerListGeneral from './src/routes/list/listTypesPhrasalVerbs/listGeneral.js';
-import routerListRoutines from './src/routes/list/listTypesPhrasalVerbs/listRoutines.js';
+import { routerListRoutines, routerListSports, routerListGeneral, routerListShopping, routerListCinema} from './src/routes/list/listTypesPhrasalVerbs/listGeneralTypes.js';
+
 
 
 const app = express();
@@ -20,8 +20,8 @@ app.use("/", routerInsert);
 app.use("/", routerDelete);
 app.use("/", routerUpdate);
 app.use("/", routerList);
-app.use("/", routerListGeneral);
-app.use("/", routerListRoutines);
+app.use("/", routerListRoutines, routerListSports, routerListGeneral, routerListShopping, routerListCinema);
+
 
 
 
