@@ -19,6 +19,10 @@ const userSchema = mongoose.Schema({
         maxLength: 100,
         required: true
     },
+    type: {
+        type: String,
+        
+    },
 
 });
 
