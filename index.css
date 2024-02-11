@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 6px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -15,13 +15,14 @@
 
 #search-input {
   flex: 1;
-  padding: 10px;
+  width: 17em;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 #search-button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-left: 10px;
   border: none;
   border-radius: 5px;
@@ -35,6 +36,7 @@
   background-color: #0056b3;
 }
 
+
 .search-buttons {
   display: flex;
   justify-content: center;
@@ -42,88 +44,67 @@
 }
 
 .search-button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #4CAF50;
-  /* Cor de fundo verde */
-  color: white;
-  /* Cor do texto branco */
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+}
+
+.search-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 .search-button:hover {
-  background-color: #45a049;
-  /* Cor de fundo verde mais escura ao passar o mouse */
+  background-color: #0056b3;
 }
 
 
-
-
-
-/* Estilos para os cards */
-/* Estilos para os cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Centraliza os cards horizontalmente */
 }
 
 .card {
-  width: 300px;
-  /* Largura fixa para os cards */
+  width: 200px;
   margin: 20px;
-  /* Espaçamento entre os cards */
-  background-color: #f9f9f9;
-  /* Cor de fundo */
+  background-color: #ffa1a1;
   border-radius: 10px;
-  /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra */
   padding: 20px;
-  /* Espaçamento interno */
   transition: transform 0.3s ease;
-  /* Transição suave ao passar o mouse */
   cursor: pointer;
-  /* Altera o cursor para indicar interatividade */
 }
 
 .card:hover {
   transform: translateY(-5px);
-  /* Elevação ao passar o mouse */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Sombra aumentada */
 }
 
 .card h2 {
   font-size: 24px;
-  /* Tamanho da fonte do título */
   margin-bottom: 10px;
-  /* Espaçamento inferior */
   color: #333;
-  /* Cor do título */
 }
 
 .card p {
   font-size: 16px;
-  /* Tamanho da fonte do texto */
   line-height: 1.6;
-  /* Altura da linha */
   margin-bottom: 10px;
-  /* Espaçamento inferior */
   color: #666;
-  /* Cor do texto */
+
 }
 
 .card p:last-child {
   margin-bottom: 0;
-  /* Remove a margem inferior do último parágrafo */
+
 }
 
 .card .example {
   font-style: italic;
-  /* Estilo itálico para o exemplo */
+
 }

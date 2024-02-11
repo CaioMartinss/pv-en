@@ -5,6 +5,8 @@ function searchPhrasalVerbs(data, searchTerm) {
         if (typeof item === 'object' && item !== null) {
             return (
                 (item.phrasalVerb || '').toLowerCase().includes(searchTermLower)
+                || (item.meaning || '').toLowerCase().includes(searchTermLower)
+                || (item.example || '').toLowerCase().includes(searchTermLower)
             );
         }
         return false;
