@@ -14,9 +14,6 @@ const createCardsShopping = (phrasalVerb) => {
     exampleParagraph.textContent = `Example: ${phrasalVerb.example}`;
     card.appendChild(exampleParagraph);
 
-    const typePhrasalVerb = document.createElement('p');
-    typePhrasalVerb.textContent = `Type: ${phrasalVerb.type}`;
-    card.appendChild(typePhrasalVerb);
 
     return card;
 };
@@ -24,7 +21,7 @@ const createCardsShopping = (phrasalVerb) => {
 const displayPhrasalVerbsShopping = (phrasalVerbList, phrasalVerbs) => {
     phrasalVerbList.innerHTML = ''; // Limpa a lista antes de exibir os resultados
     phrasalVerbs.forEach((phrasalVerb) => {
-        const card = createCard(phrasalVerb);
+        const card = createCardsShopping(phrasalVerb);
         phrasalVerbList.appendChild(card);
     });
 };
@@ -33,7 +30,7 @@ const getPhrasalVerbsShopping = async (phrasalVerbList, category) => {
     try {
         const response = await fetch(`http://localhost:3000/general?type=${category}`);
         const phrasalVerbs = await response.json();
-        displayPhrasalVerbs(phrasalVerbList, phrasalVerbs);
+        displayPhrasalVerbsShopping(phrasalVerbList, phrasalVerbs);
     } catch (error) {
         console.error('Erro ao obter os Phrasal Verbs:', error);
     }
@@ -41,10 +38,6 @@ const getPhrasalVerbsShopping = async (phrasalVerbList, category) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const phrasalVerbList = document.getElementById('phrasal-verb-shopping');
-    getPhrasalVerbs(phrasalVerbList, 'shopping');
+    getPhrasalVerbsShopping(phrasalVerbList, 'shopping');
 
-    const shoppingButton = document.getElementById('shopping-button');
-    shoppingButton.addEventListener('click', () => {
-        getPhrasalVerbsShopping(phrasalVerbList, 'shopping');
-    });
 });

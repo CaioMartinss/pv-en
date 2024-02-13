@@ -1,6 +1,6 @@
 import express from 'express';
-import '../db/connection.js';
-import userModel from '../model/model.js';
+import '../../db/connection.js';
+import userModel from '../../model/model.js';
 
 
 const routerDelete = express.Router();
