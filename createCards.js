@@ -2,6 +2,7 @@ const createCards= (phrasalVerb) => {
     const card = document.createElement('div');
     card.classList.add('card');
 
+    
     const phrasalVerbHeader = document.createElement('h2');
     phrasalVerbHeader.textContent = phrasalVerb.phrasalVerb;
     card.appendChild(phrasalVerbHeader);
