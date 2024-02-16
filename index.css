@@ -1,4 +1,3 @@
-
 /* Estilos para a barra de pesquisa */
 .pesquisar {
   display: flex;
@@ -64,6 +63,33 @@
 }
 
 
+.container {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  /* Centraliza o texto dos elementos h3 */
+  background-color: #007bff;
+  /* Cor de fundo */
+  color: #ffffff;
+  /* Cor do texto */
+  padding: 5px 10px;
+  /* Espaçamento interno */
+  border-radius: 5px;
+  /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  display: inline-block;
+  /* Permite que o elemento h3 ocupe apenas o espaço necessário */
+  margin: 0 auto;
+  margin-top: 10px;
+  /* Centraliza horizontalmente */
+  /* Reseta a propriedade left */
+  max-width: 80%;
+  /* Define uma largura máxima */
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,9 +100,9 @@
   width: 170px;
   height: 200px;
   margin: 15px;
-  background-color: #ecebeb;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.156);
   padding: 20px;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -104,18 +130,16 @@
   margin-bottom: 0;
 }
 
-/* Adições para estilização adicional */
-
 .card-divider {
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #ddd;
   margin-top: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  /* Defina a largura máxima do divisor */
+  max-width: 800px;
+  /* Defina um valor máximo para a largura */
+  margin-left: auto;
+  /* Centraliza o divisor horizontalmente */
+  margin-right: auto;
+  /* Centraliza o divisor horizontalmente */
 }
-
-.frequency {
-  font-size: 12px;
-  color: #888;
-  text-align: center;
-  margin-top: 5px;
-}
-
-
