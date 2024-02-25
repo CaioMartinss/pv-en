@@ -83,7 +83,7 @@ h3 {
   display: inline-block;
   /* Permite que o elemento h3 ocupe apenas o espaço necessário */
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   /* Centraliza horizontalmente */
   /* Reseta a propriedade left */
   max-width: 80%;

@@ -74,22 +74,9 @@ routerListShopping.get('/shopping', async (req, res) => {
 });
 
 
-const routerListCinema = express.Router();
-routerListCinema.use(express.json());
-
-routerListCinema.get('/cinema', async (req, res) => {
-    try {
-        const cinema = await userModel.find({ type: "cinema" });
-        res.json(cinema);
-    } catch (error) {
-        res.status(500).json({ error: "erro ao listar phrasal verbs" });
-
-    }
-
-});
 
 
 export { 
     routerListRoutines, routerListSports, 
-    routerListGeneral, routerListShopping, routerListCinema };
+    routerListGeneral, routerListShopping };
 

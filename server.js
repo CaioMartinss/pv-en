@@ -7,8 +7,8 @@ import routerDelete from './src/routes/delete/delete.js';
 import routerList from './src/routes/list/list.js';
 import routerUpdate from './src/routes/update.js';
 
-import { routerListRoutines, routerListSports, routerListGeneral, routerListShopping, routerListCinema} from './src/routes/list/listTypesPhrasalVerbs/listGeneralTypes.js';
-import {routerDeleteGeneral, routerDeleteCinema, routerDeleteShopping, routerDeleteRoutines, routerDeleteDaily} from './src/routes/delete/deleteByType/deletePhrasalVerbByType.js';
+import { routerListRoutines, routerListSports, routerListGeneral, routerListShopping} from './src/routes/list/listTypesPhrasalVerbs/listGeneralTypes.js';
+import {routerDeleteGeneral, routerDeleteShopping, routerDeleteRoutines, routerDeleteDaily, routerDeleteSports} from './src/routes/delete/deleteByType/deletePhrasalVerbByType.js';
 
 
 const app = express();
@@ -20,8 +20,8 @@ app.use("/", routerInsert);
 app.use("/", routerDelete);
 app.use("/", routerUpdate);
 app.use("/", routerList);
-app.use("/", routerListRoutines, routerListSports, routerListGeneral, routerListShopping, routerListCinema);
-app.use("/", routerDeleteGeneral, routerDeleteCinema, routerDeleteShopping, routerDeleteRoutines, routerDeleteDaily);
+app.use("/", routerListRoutines, routerListSports, routerListGeneral, routerListShopping);
+app.use("/", routerDeleteGeneral, routerDeleteShopping, routerDeleteRoutines, routerDeleteDaily, routerDeleteSports);
 
 
 

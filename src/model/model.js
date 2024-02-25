@@ -10,13 +10,13 @@ const userSchema = mongoose.Schema({
     meaning : {
         type: String,
         minLength: 10,
-        maxLength: 100,
+        maxLength: 1000,
         required: true
     },
     example : {
         type: String,
         minLength: 10,
-        maxLength: 100,
+        maxLength: 1000,
         required: true
     },
     type: {
